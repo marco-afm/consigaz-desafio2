@@ -27,7 +27,7 @@
 
 .section1 {
     padding: 3em var(--margem-lateral);
-    background-image: url(/imagens/img-de-fundo1.png);
+    background-image: url(../imagens/img-de-fundo1.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
