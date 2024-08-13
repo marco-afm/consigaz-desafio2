@@ -1,0 +1,90 @@
+.section3 {
+    display: flex;
+    background-image: linear-gradient(to top right, rgb(34, 55, 125), rgb(77, 188, 235), rgb(77, 188, 235));
+    align-items: center;
+    justify-content: center;
+    padding: 2.5em 0 4.7em 0;
+    gap: 1em;
+}
+
+.section3 img {
+    width: 41.5%;
+    position: absolute;
+    left: 7em;
+    top: 114em;
+}
+
+.section3 div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    margin: 0 var(--margem-lateral) 0 50vw;
+}
+
+.section3 div h2 {
+    color: var(--color1);
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    line-height: 1.25em;
+    margin-left: 0.3em;
+}
+
+.section3 div span, p, a {
+    color: var(--color2);
+}
+
+.section3 div span {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-left: 0.5em;
+}
+
+.section3 div p {
+    margin-top: 0.5em;
+    font-family: var(--font2);
+    font-size: 0.875rem;
+    line-height: 1.25em;
+}
+
+.section3 div a {
+    margin: 1em auto 0 0.5em;
+}
+
+/* MOBILE */
+@media screen and (max-width: 412px) {
+    .section3 {
+        flex-direction: column-reverse;
+        padding: 2.5em 0 0 0;
+    }
+
+    .section3 img {
+        width: 75%;
+        position: relative;
+        left: 0;
+        top: 0;
+    }   
+
+    .section3 div {
+        gap: 0.75em;
+        margin: 1em;
+    }
+
+    .section3 div h2 {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .section3 div span {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+    
+    .section3 div p {
+        font-size: 1.125rem;
+        margin-top: 1em;
+    }
+    
+    .section3 div a {
+        margin: 1em auto 0 auto;
+    }
+}

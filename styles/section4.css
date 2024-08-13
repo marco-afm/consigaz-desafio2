@@ -1,0 +1,125 @@
+.section4 {
+    padding: 4em 0 17.6em 0;
+    background-image: url(/imagens/fachada+revenda.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section4 div {
+    display: flex;
+    padding: 0 var(--margem-lateral);
+}
+
+.section4 div h2 {
+    line-height: 1.25em;
+    margin-right: 7em;
+    color: var(--color1);
+    text-transform: uppercase;
+}
+
+.section4 div strong {
+    color: var(--color1);
+    text-transform: uppercase;
+    padding: 0 0.8em;  
+    position: absolute;
+    left: 11%;
+}
+
+.section4 div p {
+    color: var(--color1);
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.25em;
+    margin-right: 6em;
+    font-family: var(--font2);
+}
+
+.section4 ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 3em 14em;
+}
+
+.section4 ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.section4 ul li img {
+    width: 30%;
+}
+
+.section4 ul li p {
+    font-weight: 700;
+    width: 61%;
+    margin-top: 1em;
+    line-height: 1.125em;
+}
+
+.section4 ul li p strong {
+    color: var(--color1);
+}
+
+/* MOBILE */
+@media screen and (max-width: 412px) {
+    .section4 {
+        padding: 0;
+        background-image: url(/imagens/fachada+revenda.png);
+        background-repeat: no-repeat;
+        background-size: 155vmax;
+        background-position: right 0;
+    }
+
+    .section4 div {
+        flex-direction: column;
+        padding: 2em 1em;
+        margin-bottom: 25em;
+    }
+
+    .section4 div h2 {
+        margin-right: 0;
+        margin-left: 1em;
+        font-size: 1.75rem;
+    }
+
+    .section4 div strong {
+        color: var(--color1);
+        text-transform: uppercase;
+        padding: 0 0.8em;  
+        position: relative;
+        left: -6.75%;
+    }
+
+    .section4 div p {
+        font-size: 1rem;
+        margin: 1em auto 1em 0.5em;
+    }
+
+    .section4 ul {
+        grid-template-columns: 1fr;
+        margin: 3em 0;
+    }
+
+    .section4 ul li {
+        margin: 2em 0;
+    }
+
+    .section4 ul li img {
+        width: 25%;
+    }
+    
+    .section4 ul li p {
+        width: 90%;
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: var(--color1);
+        line-height: 1.25em;
+    }
+    
+    .section4 ul li p strong {
+        color: var(--color3);
+    }
+}
