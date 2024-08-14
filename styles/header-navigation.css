@@ -1,0 +1,95 @@
+.header__navigation {
+    padding: 2em var(--margem-lateral);
+    background-color: var(--color1);
+}
+
+.navigation__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.consigaz-logo {
+    width: 18.75em;
+}
+
+.consigaz-logo img {
+    width: 100%;
+}
+
+.label__menu-icone {
+    display: none;
+}
+
+.input__menu-icone {
+    display: none;
+}
+
+.list__navigation {
+    display: flex;
+    gap: 0.5em;
+}
+
+.list__navigation li {
+    padding: 1em;
+}
+
+.list__navigation li:hover {
+    background-color: var(--hover1);
+    border-radius: 6px;
+}
+
+.list__navigation li a {
+    color: var(--color2);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .header__navigation {   
+        padding: 1em 2em;
+    }
+
+    .consigaz-logo img {
+        width: 50vmin;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .label__menu-icone {
+        display: block;
+    }
+
+    .list__navigation {
+        display: none;
+    }
+
+    .input__menu-icone:checked~.list__navigation {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0%;
+        top: 66px;
+        z-index: 5;
+        border-radius: 6px 0 6px 6px;
+        padding: 1em;
+        background-color: var(--color4);
+    }
+
+    .list__navigation li {
+        padding: 1em;
+    }
+
+    .list__navigation li:hover {
+        background: linear-gradient(to bottom, var(--hover2), var(--color2));
+    }
+
+    .list__navigation li a {
+        color: var(--color1);
+    }
+}

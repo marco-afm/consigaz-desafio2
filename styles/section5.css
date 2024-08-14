@@ -1,0 +1,146 @@
+.section5 {
+    text-align: center;
+    padding: 7em var(--margem-lateral);
+    padding-bottom: 0;
+}
+
+.fundo-decorado {
+    width: 20vmin;
+    position: absolute;
+    left: 0%;
+    top: 475%;
+    z-index: -1;
+}
+
+.fundo-decorado img {
+    width: 1045%;
+}
+
+.section5 h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.section5 ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 2em 7em;
+}
+
+.section5 ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section5 ul li img {
+    width: 50%;
+}
+
+.section5 ul li p {
+    color: var(--color1);
+    width: 75%;
+    margin-top: 1em;
+    line-height: 1.25em;
+    font-size: 1.25rem;
+}
+
+.section5 ul li p strong {
+    color: var(--color3);
+    font-weight: 600;
+}
+
+.section5-div1 {
+    display: flex;
+    gap: 2em;
+    padding: 5em 0;
+}
+
+.section5-div2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.section5-div2 p {
+    color: var(--color1);
+    text-align: left;
+    font-family: var(--font1);
+    font-size: 1.4rem;
+    line-height: 1.125em;
+    margin-bottom: 1.25em;
+}
+
+.section5-div1 a img {
+    width: 85vmin;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .section5 {
+        padding: 5em 0 3em 0;
+        background: linear-gradient(to top, var(--color2), var(--color4));
+    }
+    
+    .fundo-decorado {
+        display: none;
+    }
+    
+    .fundo-decorado img {
+        width: 100%;
+    }
+    
+    .section5 h2 {
+        text-transform: uppercase;
+        font-size: 1.75rem;
+    }
+    
+    .section5 ul {
+        grid-template-columns: 1fr 1fr;
+        margin: 3em 1em;
+        gap: 1em;
+    }
+    
+    /* .section5 ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+    
+    .section5 ul li img {
+        width: 50%;
+    }
+    
+    .section5 ul li p {
+        width: 100%;
+        font-size: 1.125rem;
+    }
+    
+    /* .section5 ul li p strong {
+        color: var(--color3);
+        font-weight: 600;
+    } */
+    
+    .section5-div1 {
+        flex-direction: column;
+        gap: 0;
+        padding: 3em 0;
+    }
+    
+    .section5-div2 {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+    }
+    
+    .section5-div2 p {
+        text-align: center;
+        font-size: 1.125rem;
+        line-height: 1.25em;
+        margin-bottom: 1.5em;
+    }
+    
+    .section5-div1 a img {
+        width: 85vmin;
+    }
+}

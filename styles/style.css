@@ -1,0 +1,39 @@
+@import url("../styles/reset.css");
+@import url("../styles/main.css");
+@import url("../styles/header-navigation.css");
+@import url("../styles/section1.css");
+@import url("../styles/section2.css");
+@import url("../styles/section3.css");
+@import url("../styles/section4.css");
+@import url("../styles/section5.css");
+@import url("../styles/section6.css");
+@import url("../styles/section7.css");
+@import url("../styles/section8.css");
+@import url("../styles/section9.css");
+@import url("../styles/section10.css");
+@import url("../styles/rodapé.css");
+
+:root {
+    --color1: #ffffff;
+    --color2: #22377d;
+    --color3: #00c8fd;
+    --color4: #14255e;
+    --color5: #101e4c;
+
+    --hover1: #eeeeee;
+    --hover2: #273f8d;
+    --hover3: #34d3ff;
+
+    --font1: "Ubuntu";
+    --font2: "Inter";
+
+    --margem-lateral: 11em;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--font1);
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--color2);
+}

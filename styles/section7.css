@@ -1,0 +1,144 @@
+.section7 {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 0;
+}
+
+.section7 h2 {
+    margin: 0 auto;
+    font-size: 2.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 40%;
+}
+
+.slides-icones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5em 10.5em -1em 10.5em;
+    text-align: center;
+    z-index: 1;
+}
+
+.slides-icones li img {
+    width: 10vmin;
+}
+
+.slides-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 7em 0;
+}
+
+/* Setas Esquerda/Direita */
+.slides {
+    display: flex;
+    align-items: center;
+    width: 85%;
+}
+
+.arrow-slides {
+    width: 4vmin;
+}
+/* Fim - Setas Esquerda/Direita */
+
+
+/* SLIDE-DESCRIÇÃO */
+.slides-descrição {
+    display: flex;
+    gap: 1em;
+    margin: 0 3em;
+}
+
+.slides-descrição li {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    background-color: var(--color3);
+    padding: 2em;
+    border-radius: 56px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.slides-descrição li p {
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.25em;
+    width: 97%;
+}
+
+.slides-descrição li span {
+    color: var(--color1);
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 0;
+    width: 70%;
+    padding-top: 1.5em;
+}
+/* FIM - SLIDE-DESCRIÇÃO */
+
+.section7 a {
+    width: auto;
+    margin: 0 auto;
+}
+
+.swiper {
+    display: none;
+    margin: 0;
+}
+
+
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .section7 {
+        padding: 4em 0;
+    }
+    
+    .section7 h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
+    .slides-icones {
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 5em 10.5em -1em 10.5em;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    .slides-icones li img {
+        width: 10vmin;
+    }
+    
+    .slides-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 7em 0;
+    }
+
+    /* Carrosel */
+    .swiper {
+        display: block;
+        padding: 2em 3em;   
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+    
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
+    
+    .swiper-pagination {
+        position: initial;
+        margin: 0.5em 0;
+    }
+}
