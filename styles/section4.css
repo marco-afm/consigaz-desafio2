@@ -1,6 +1,6 @@
 .section4 {
     padding: 4em 0 17.6em 0;
-    background-image: url(/imagens/fachada+revenda.png);
+    background-image: url(../imagens/fachada+revenda.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -67,7 +67,7 @@
 @media screen and (max-width: 1024px) {
     .section4 {
         padding: 0;
-        background-image: url(/imagens/fachada+revenda.png);
+        background-image: url(../imagens/fachada+revenda.png);
         background-repeat: no-repeat;
         background-size: 155vmax;
         background-position: right 0;

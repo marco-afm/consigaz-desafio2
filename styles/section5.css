@@ -101,12 +101,6 @@
         gap: 1em;
     }
     
-    /* .section5 ul li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
-    
     .section5 ul li img {
         width: 50%;
     }
@@ -115,11 +109,6 @@
         width: 100%;
         font-size: 1.125rem;
     }
-    
-    /* .section5 ul li p strong {
-        color: var(--color3);
-        font-weight: 600;
-    } */
     
     .section5-div1 {
         flex-direction: column;
